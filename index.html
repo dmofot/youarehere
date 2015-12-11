@@ -30,11 +30,11 @@
 	<script>
 		var map = L.map('map');
 
-		L.tileLayer("https://{s}.tiles.mapbox.com/v3/examples.bc17bb2a/{z}/{x}/{y}.png", {
+		L.tileLayer("http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png", {
 			detectRetina: 'true',
 			maxZoom: 21,
 			subdomains: ["a", "b", "c", "d"],
-			attribution: 'Tiles courtesy of <a href="http://www.mapbox.com/" target="_blank">Mapbox</a> '
+			attribution: 'Tiles courtesy of <a href="http://www.stamen.com/" target="_blank">Stamen</a> '
 		}).addTo(map);
 
 		function onLocationFound(e) {
