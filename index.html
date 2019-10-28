@@ -44,7 +44,7 @@
 		function onLocationFound(e) {
 			var radius = e.accuracy / 2;
 
-			var content = radius + ' meters from this point, you got <p><iframe width="250" height="150" src="https:\/\/www.youtube.com\/embed\/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><\/iframe><\/p>';
+			var content = radius + ' meters from this point, you got <p><iframe width="250" height="150" src="https:\/\/www.youtube.com\/embed\/dQw4w9WgXcQ?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen><\/iframe><\/p>';
 
 			L.marker(e.latlng).addTo(map)
 				.bindPopup(content).openPopup();
