@@ -11,8 +11,8 @@
 	<meta name="author" content="David Todd">
 	<title>Here's Where You Got...</title>
 
-	<link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
-	<script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
 	<style>
 		body {
@@ -34,7 +34,7 @@
 	<script>
 		var map = L.map('map');
 
-		L.tileLayer("//stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png", {
+		L.tileLayer("https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png", {
 			detectRetina: 'true',
 			maxZoom: 21,
 			subdomains: ["a", "b", "c", "d"],
